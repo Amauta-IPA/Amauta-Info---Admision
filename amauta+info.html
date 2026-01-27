@@ -354,6 +354,122 @@
 
 
 
+.cta-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.cta-box {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Colores */
+.bg-blue {
+  background-color: #e5213d;
+  color: #ffffff;
+}
+.bg-SEC {
+  background-color:  #00055a;
+  color: #ffffff;
+}
+
+.bg-red {
+  background-color: #f8b315;
+  color: #ffffff;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Textos */
+.cta-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.cta-box p {
+  font-size: 1rem;
+  max-width: 520px;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* Botones */
+.cta-btn {
+  width: fit-content;
+  padding: 12px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.cta-btn.light {
+  background-color: #ffffff;
+  color: #e5213d;
+}
+
+.bg-red .cta-btn.light {
+  color: red;
+}
+
+.cta-btn.dark {
+  background-color: #e5213d;
+  color: #ffffff;
+}
+
+.cta-btn.dark1 {
+  background-color: #f8b315;
+  color: #ffffff;
+}
+.cta-btn.light1 {
+  background-color: #ffffff;
+  color: #f8b315;
+}
+.cta-btn.light2 {
+  background-color: #ffffff;
+  color: #00055a;
+}
+.cta-btn.dark2 {
+  background-color: #00055a;
+  color: #ffffff;
+}
+.cta-btn:hover {
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cta-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-box {
+    padding: 40px 28px;
+  }
+}
+
+
+
+
+
+
+
+
+    
+
   </style>
 </head>
 
@@ -657,6 +773,71 @@
     </section>
 
 
+<section class="cta-grid">
+
+  <!-- Fila 1 -->
+  <div class="cta-row">
+    <!-- Azul -->
+    <div class="cta-box bg-blue">
+    <b><h2>BROCHURE DE EDUCACIÓN INICIAL</h2></b>
+      <p>Descubre toda la información de la carrera y da el primer paso hacia tu futuro profesional.</p>
+      <a href="https://tusitio.com/test-vocacional" target="_blank" class="cta-btn light">
+        Ver brochure en línea
+      </a>
+    </div>
+
+    <!-- Blanco -->
+    <div class="cta-box bg-white">
+      <b><h2>MALLA CURRICULAR DE EDUCACIÓN INICIAL</h2></b>
+      <p>Revisa la malla curricular y conoce las competencias, cursos y etapas de tu formación profesional.</p>
+      <a href="https://drive.google.com/file/d/1W9RBzvgoh3CN_UB8_O2Xrdy7Buz-N8En/view?usp=sharing" target="_blank" class="cta-btn dark">
+        Ver malla en línea
+      </a>
+    </div>
+  </div>
+
+  <!-- Fila 2 -->
+  <div class="cta-row">
+    <!-- Blanco -->
+    <div class="cta-box bg-white">
+      <b><h2>MALLA CURRICULAR DE EDUCACIÓN PRIMARIA</h2></b>
+      <p>Conoce los cursos que llevarás a lo largo de tu carrera y cómo se estructura tu aprendizaje.</p>
+      <a href="https://drive.google.com/file/d/1Sg7CdoJAN8aeTNbmoZHbQuN5p3UhFX8U/view?usp=sharing" target="_blank" class="cta-btn dark1">
+       Ver malla en línea
+      </a>
+    </div>
+
+    <!-- Rojo -->
+    <div class="cta-box bg-red">
+     <b><h2>BROCHURE DE EDUCACIÓN PRIMARIA</h2></b>
+      <p>Explora el brochure y conoce a detalle nuestra propuesta académica, beneficios y oportunidades de formación.</p>
+      <a href="https://tusitio.com/convalidaciones" target="_blank" class="cta-btn light1">
+        Ver brochure en línea
+      </a>
+    </div>
+  </div>
+<!-- Fila 3 -->
+  <div class="cta-row">
+    <!-- Azul -->
+    <div class="cta-box bg-SEC">
+      <b><h2>BROCHURE DE EDUCACIÓN SECUNDARIA ESPECIALIDAD CIENCIAS SOCIALES</h2></b>
+      <p>Explora el brochure y conoce a detalle nuestra propuesta académica, beneficios y oportunidades de formación.</p>
+      <a href="https://tusitio.com/test-vocacional" target="_blank" class="cta-btn light2">
+        Ver brochure en línea
+      </a>
+    </div>
+
+    <!-- Blanco -->
+    <div class="cta-box bg-white">
+     <b><h2>MALLA CURRICULAR DE EDUCACIÓN SECUNDARIA ESPECIALIDAD CIENCIAS SOCIALES</h2></b>
+      <p>Revisa la malla curricular y conoce las competencias, cursos y etapas de tu formación profesional.</p>
+      <a href="https://drive.google.com/file/d/1v8Hz53zSoOtb1p7HHGUn4PmCh8qc3s6X/view?usp=sharing" target="_blank" class="cta-btn dark2">
+        Ver malla en línea
+      </a>
+    </div>
+  </div>
+</section>
+
 
 <!-- ================== VIDEOS INFORMATIVOS ================== -->
 <section class="max-w-7xl mx-auto px-3 sm:px-4 py-10 space-y-12">
@@ -940,6 +1121,7 @@ Al finalizar la segunda fase, los resultados de los postulantes que hayan alcanz
   </script>
 </body>
 </html>
+
 
 
 
